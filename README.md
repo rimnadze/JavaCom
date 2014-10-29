@@ -10,7 +10,7 @@ JavaCom is in-house written in Ministry Of Internal Affairs of Georgia
 documented code. It just works and does its job very well. 
 This software is released under GPLv3+ license, hoping it helps other people too.
 
-My name is Rezo Imnadze and you can contact me at rezo@imnadze.ge. Feedback is 
+My name is Rezo Imnadze and you can contact me at rezo at imnadze.ge. Feedback is 
 highly appreciated.
 
 Thank you for using this library.
