@@ -1,7 +1,7 @@
 JavaCom
 =======
 
-JavaCom is a two peace of libraries for Windows Java users to communicate to 
+JavaCom is a two piece of libraries for Windows Java users to communicate to 
 serial COM. As I could not find alternative, I wrote new. (There was RX TX, 
 but it is outdated and no sources are not available at this moment.) 
 JavaCom is in-house written in Ministry Of Internal Affairs of Georgia 
@@ -18,7 +18,7 @@ Thank you for using this library.
 
 
 To Build Dll
-============
+------------
 
 I used "MinGW" and "MinGW-w64" to build 32 and 64 bit binaries. It also needs
 Java JDK to use JNI headers. You must have environment variables ready.
@@ -33,7 +33,7 @@ Ready dlls are located in "build" directory.
 
 
 To Build Jar
-============
+------------
 
 JavaComApi is Maven application, so "mvn package" is enough to build jar.
 It has no dependencies.
@@ -41,7 +41,7 @@ It has no dependencies.
 
 
 To Setup Machine
-================
+----------------
 
 You need to rename JavaCom32.dll or JavaCom64.dll (depending on java runtime version)
 to JavaCom.dll in your Java application's working directory or in JRE's bin 
@@ -49,7 +49,7 @@ directory. Anywhere application can directly access.
 
 
 To Use Api From Java
-====================
+--------------------
 
 Little example is like this:
 
