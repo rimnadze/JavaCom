@@ -1,0 +1,17 @@
+These commands are environment dependent, but I think it's good reference.
+
+Jni Headers generation:
+
+cd %homepath%\Documents\NetBeansProjects\JavaCom\JavaComApi\src\main\java
+javac ge\gov\mia\javacomapi\Native.java
+javah ge.gov.mia.javacomapi.Native
+rm ge\gov\mia\javacomapi\Native.class
+mv ge_gov_mia_javacomapi_Native.h %homepath%\Documents\NetBeansProjects\JavaCom\JavaComDll\
+
+
+Compile dll: 
+cd %homepath%\Documents\NetBeansProjects\JavaCom\JavaComDll\
+x86_64-w64-mingw32-gcc -Wl,--add-stdcall-alias -I"%JAVA_HOME%\include" -I"%JAVA_HOME%\include\win32" -shared -o build\JavaCom64.dll JavaCom.c
+gcc -Wl,--add-stdcall-alias -I"%JAVA_HOME%\include" -I"%JAVA_HOME%\include\win32" -shared -o build\JavaCom32.dll JavaCom.c
+
+
